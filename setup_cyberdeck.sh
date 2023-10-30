@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e # Exit immediately if a command exits with a non-zero status
-
+# check if OS is macOS or Linux
 if [[ $(uname) == "Darwin" ]]; then
     echo "Running macOS setup script..."
     if command -v brew >/dev/null 2>&1; then
